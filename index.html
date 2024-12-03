@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+
+        <div class="tab_container">
+            <p class="tab" data_userWeather>Your Weather</p>
+            <p class="tab" data_searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather_container">
+
+            <!-- grant location -->
+            <div class="grant_location">
+                <img src="location-svgrepo-com.svg" alt="location" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow access to get weather Info</p>
+                <button class="btn" data_grantAccess>Grant Access</button>
+            </div>
+
+            <!-- search location -->
+            <form class="form_container" data_searchForm>
+                <input placeholder="Search for City...." data_searchInput>
+                <button class="btn" type="submit">
+                    <img src="search-svgrepo-com (1).svg" alt="search" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!-- loading screen -->
+            <div class="loading_container">
+                <img src="giphy.webp" alt="loading" width="150" height="150">
+                <p>Loading</p>
+            </div>
+
+            <!-- your weather UI -->
+            <div class="user_info_container">
+                <!-- city name and flag -->
+                <div class="name">
+                    <!-- dynamic hai -->
+                    <p data_cityName></p>
+                    <img src="" alt="" data_countryIcon>
+
+                </div>
+
+                <p data_weatherDesc></p>
+                <!-- weather icon -->
+                <img src="" alt="" data_weatherIcon>
+                <!-- temp -->
+                <p data_temp></p>
+
+                <!-- 3 cards parameter -->
+                <div class="parameter_container">
+
+                    <!-- card 1 -->
+                    <div class="parameter">
+                        <img src="wind-svgrepo-com.svg" alt="wind">
+                        <p>Wind Speed</p>
+                        <p data_windSpeed></p>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="parameter">
+                        <img src="humidity-svgrepo-com.svg" alt="humidity">
+                        <p>Humidity</p>
+                        <p data_humidity></p>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="parameter">
+                        <img src="cloud-sun-2-svgrepo-com.svg" alt="cloud">
+                        <p>Cloud</p>
+                        <p data_cloud></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
